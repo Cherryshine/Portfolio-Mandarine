@@ -46,6 +46,9 @@ class NavComponent extends LitElement {
       color: #4b5563;
     }
   `;
+  createRenderRoot() {
+    return this; // Shadow DOM을 비활성화하고 light DOM 사용
+  }
 
   render() {
     return html`

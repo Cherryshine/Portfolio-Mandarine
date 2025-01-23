@@ -16,9 +16,14 @@ class FooterComponent extends LitElement {
     }
   `;
 
+
+  createRenderRoot() {
+    return this; // Shadow DOM을 비활성화하고 light DOM 사용
+  }
+
   render() {
     return html`
-      <footer class="footer">
+      <footer style="background-color: #1f2937; color: #9ca3af; padding: 48px 0;">
         <div class="max-w-8xl mx-auto px-4">
           <div class="grid grid-cols-4 gap-8">
             <div>

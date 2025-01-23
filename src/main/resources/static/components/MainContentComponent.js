@@ -8,6 +8,9 @@ class MainContentComponent extends LitElement {
       padding: 16px;
     }
   `;
+  createRenderRoot() {
+    return this; // Shadow DOM을 비활성화하고 light DOM 사용
+  }
 
   render() {
     return html`
